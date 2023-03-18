@@ -5,12 +5,12 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 
-const Home = () => {
+const TodoList = () => {
   const [inputValue, setInputValue] = useState("");
   const [todos, setTodos] = useState([]);
   return (
     <div className="container">
-      <h1>My Todos</h1>
+      <h1>my Todos</h1>
       <ul>
         <li>
           <input
@@ -36,8 +36,8 @@ const Home = () => {
             <button
               onClick={() => {
                 setTodos(
-                  todos.filter((t, currentIndex) => {
-                    index !== currentIndex
+                  todos.filter((todos, currentIndex) => {
+                    index != currentIndex;
                   })
                 );
               }}
@@ -47,8 +47,8 @@ const Home = () => {
           </li>
         ))}
       </ul>
-      <div>{todos.length} task</div>
+      <div className="taskCounter">{todos.length} task</div>
     </div>
   );
 };
-export default Home;
+export default TodoList;
