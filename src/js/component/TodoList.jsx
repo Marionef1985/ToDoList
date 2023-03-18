@@ -10,7 +10,7 @@ const TodoList = () => {
   const [todos, setTodos] = useState([]);
   return (
     <div className="container">
-      <h1>my Todos</h1>
+      <h1>my Todo's</h1>
       <ul>
         <li>
           <input
@@ -36,8 +36,9 @@ const TodoList = () => {
             <button
               onClick={() => {
                 setTodos(
-                  todos.filter((todos, currentIndex) => {
-                    index != currentIndex;
+                  todos.filter((element, currentIndex) => {
+                    const newArray = index != currentIndex;
+                    setTodos(newArray)
                   })
                 );
               }}
