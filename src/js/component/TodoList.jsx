@@ -37,8 +37,7 @@ const TodoList = () => {
               onClick={() => {
                 setTodos(
                   todos.filter((element, currentIndex) => {
-                    const newArray = index != currentIndex;
-                    setTodos(newArray)
+                    element[index] != currentIndex;
                   })
                 );
               }}
@@ -48,7 +47,7 @@ const TodoList = () => {
           </li>
         ))}
       </ul>
-      <div className="taskCounter">{todos.length} task</div>
+      <div className="taskCounter">{todos.length} tasks</div>
     </div>
   );
 };
