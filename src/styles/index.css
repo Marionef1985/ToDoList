@@ -1,5 +1,10 @@
-.container {
+.outsideContainer{
+  display: flex;
+  justify-content: center;
+}
 
+.container {
+  
   height: 100%;
   width: 40%;
   background-color: rgb(255, 245, 233);
@@ -28,19 +33,29 @@ ul {
 li {
   display: flex;
   font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  color: rgb(143, 116, 84);
 }
 
 .listItems {
   width: 95%;
   padding-left: 10px;
-  font-family: 'Nunito', sans-serif;
 }
 
-input {
+.input {
+  background-color: rgb(255, 234, 209);
   width: 100%;
   border: none;
   padding: 10px;
   margin: 3px;
+  font-size: 18px;
+}
+
+.input:focus {
+  outline-color:  rgb(143, 116, 84);
+  outline-style: dotted;
+  color:  rgb(143, 116, 84);
 }
 
 input[type="text"] {

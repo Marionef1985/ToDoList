@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
@@ -9,11 +10,13 @@ const TodoList = () => {
   const [inputValue, setInputValue] = useState("");
   const [todos, setTodos] = useState([]);
   return (
-    <div className="container">
-      <h1>my Todo's</h1>
+    <div className="outsideContainer">
+<div className="container">
+      <h1>my to-do's</h1>
       <ul>
         <li>
           <input
+          className="input"
             type="text"
             onChange={(e) => {
               setInputValue(e.target.value);
@@ -37,7 +40,7 @@ const TodoList = () => {
               onClick={() => {
                 setTodos(
                   todos.filter((element, currentIndex) => {
-                    element[index] != currentIndex;
+                    item[index] != currentIndex;
                   })
                 );
               }}
@@ -49,6 +52,8 @@ const TodoList = () => {
       </ul>
       <div className="taskCounter">{todos.length} tasks</div>
     </div>
+    </div>
+    
   );
 };
 export default TodoList;
