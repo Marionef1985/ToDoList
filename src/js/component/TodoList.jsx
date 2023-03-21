@@ -34,15 +34,14 @@ const TodoList = () => {
           ></input>
         </li>
         {todos.map((item, index) => (
-          <li>
+          <li key={index}>
             <div className="listItems">{item}</div>{" "}
             <button
               onClick={() => {
-                setTodos(
-                  todos.filter((element, currentIndex) => {
-                    item[index] != currentIndex;
-                  })
-                );
+                setTodos(todos.filter((item,itemIndex) => {
+                  return itemIndex !==index;
+                }
+                ));
               }}
             >
               <i className="fa-solid fa-xmark"></i>
@@ -50,7 +49,7 @@ const TodoList = () => {
           </li>
         ))}
       </ul>
-      <div className="taskCounter">{todos.length} tasks</div>
+      <div className="taskCounter">{todos.length} tasks left!</div>
     </div>
     </div>
     

@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(242, 213, 178);
+}
+
 .outsideContainer{
   display: flex;
   justify-content: center;
@@ -23,7 +27,7 @@ ul li {
   background-color: rgb(255, 234, 209);
   list-style: none;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
 }
 
 ul {
@@ -45,11 +49,11 @@ li {
 
 .input {
   background-color: rgb(255, 234, 209);
-  width: 100%;
   border: none;
+  font-size: 18px;
   padding: 10px;
   margin: 3px;
-  font-size: 18px;
+  width: 100%;
 }
 
 .input:focus {
