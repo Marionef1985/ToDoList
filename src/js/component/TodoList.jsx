@@ -38,9 +38,7 @@ const TodoList = () => {
               <button
                 onClick={() => {
                   setTodos(
-                    todos.filter((item, itemIndex) => {
-                      return itemIndex !== index;
-                    })
+                    todos.filter((item, itemIndex) => (itemIndex !== index))
                   );
                 }}
               >
