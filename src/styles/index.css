@@ -42,10 +42,12 @@ li {
   color: rgb(143, 116, 84);
 }
 
+
 .listItems {
   width: 95%;
   padding-left: 10px;
 }
+
 
 .input {
   background-color: rgb(255, 234, 209);
@@ -67,13 +69,16 @@ input[type="text"] {
   border-radius: 10px;
 }
 
-.fa-xmark {
+.fa-xmark:hover {
   color: rgb(143, 116, 84);
 }
 
 button {
   border: none;
   background-color: rgb(255, 234, 209);
+}
+button {
+  color: rgb(255, 234, 209);
 }
 
 .taskCounter {
